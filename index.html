@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <title>Product Management Website</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <!-- Brand section: logo + text -->
+            <div class="brand">
+                <img src="logo.png" alt="Krushi Logo" class="logo" />
+                <div class="brand-name">
+                    <h2>KRUSHI</h2>
+                    <p>Organize. Optimize. Grow.</p>
+                </div>
+            </div>
+
+            <!-- Nav links -->
+            <div class="nav-items">
+                <a href="#home">Home</a>
+                <a href="#about">About Us</a>
+                <a href="#products">Products</a>
+                <a href="#meeting" class="btn-nav">Book a Meeting</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="home">
+            <section class="hero"></section>
+            <div class="tag-line">
+                <h2>Digitalizing Every Level of <span> AgriFood </span> Value Chain</h2>
+            </div>
+        </section>
+        <section id="about" class="about">
+            <div class="about-img">
+                <img src="about-image.jpg" alt="about-image" id="about-image">
+            </div>
+            <div class="about-content">
+                <div class="about-heading">
+                    <h2>ABOUT US</h2>
+                </div>
+                <h3>
+                    Welcome to <span>Krushi!</span> <br> We are dedicated to connecting farmers, suppliers, and
+                    consumers with
+                    high-quality agriculture products.</h3>
+                <div class="about-grid-container">
+                    <div class="about-container">
+                        <div class="logo-head">
+                            <i class="fa-solid fa-eye"></i>
+                            <h3>Our Vision</h3>
+                        </div>
+                        <p>Empower local farmers with modern solutions for better growth.</p>
+
+                    </div>
+                    <div class="about-container">
+                        <div class="logo-head">
+                            <i class="fa-solid fa-bullseye"></i>
+                            <h3>Our Mission</h3>
+                        </div>
+                        <p>To make agriculture more accessible, sustainable, and profitable for everyone.
+                        </p>
+                    </div>
+                    <div class="about-container">
+                        <div class="logo-head">
+                            <i class="fa-solid fa-lightbulb"></i>
+                            <h3>Innovation</h3>
+                        </div>
+                        <p>We are an innovative company dedicated to delivering quality agricultural products.
+                        </p>
+                    </div>
+                    <div class="about-container">
+                        <div class="logo-head">
+                            <i class="fa-solid fa-handshake"></i>
+                            <h3>Experience</h3>
+                        </div>
+                        <p> With years of experience, we provide trusted solutions for farmers and agri-businesses
+                            alike.
+                        </p>
+                    </div>
+                </div>
+                <button>Let's grow together!</button>
+            </div>
+        </section>
+        <section id="products" class="products-section">
+            <!-- Search bar & filter -->
+            <div class="search-nav">
+                <div class="products-heading">
+                    <h2>OUR PRODUCTS</h2>
+                </div>
+                <div class="search-controls">
+                    <input type="text" id="searchInput" placeholder="Search products..." />
+                    <select id="categoryFilter">
+                        <option value="all">All Categories</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Product grid + aside wrapper -->
+            <div class="product-wrapper">
+                <section class="products-list" id="productList"></section>
+
+                <aside class="cart hidden">
+                    <h2>Cart</h2>
+                    <ul id="cartItems"></ul>
+                    <p class="total">Total: $<span id="totalPrice">0</span></p>
+                </aside>
+            </div>
+        </section>
+        <section class="book-meeting" id="meeting">
+            <div class="book-meeting-content">
+                <h2>Book a <span>Meeting</span></h2>
+                <p>Let's connect and discuss how we can help you achieve your goals. Choose a date and time that works
+                    for you.</p>
+                <form class="meeting-form">
+                    <input type="text" placeholder="Your Name" required />
+                    <input type="email" placeholder="Your Email" required />
+                    <input type="date" required />
+                    <input type="time" required />
+                    <button type="submit">Book Now</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <h3>Krushi Agrotech</h3>
+                <p>Connecting communities with sustainable solutions.</p>
+            </div>
+
+
+            <div class="footer-social">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 Krushi Agrotech. All rights reserved.</p>
+        </div>
+    </footer>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
